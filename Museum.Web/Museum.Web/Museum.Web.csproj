@@ -72,6 +72,7 @@
     <Content Include="Default.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="js\museum.js" />
     <Content Include="MuseumStyles.css" />
     <Content Include="web.config" />
     <None Include="web.Debug.config">
@@ -111,7 +112,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties UseJQuerySupport="True" UseAjaxifiedTemplates="True" />
+      <UserProperties UseAjaxifiedTemplates="True" UseJQuerySupport="True" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

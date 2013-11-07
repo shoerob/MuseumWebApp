@@ -7,6 +7,9 @@
 	<title></title>
 	<telerik:RadStyleSheetManager id="RadStyleSheetManager1" runat="server" />
     <link href="MuseumStyles.css" type="text/css" rel="Stylesheet" />
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="js/everlive.all.min.js"></script>
+    <script src="js/museum.js"></script>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -18,7 +21,13 @@
 		</Scripts>
 	</telerik:RadScriptManager>
 	<script type="text/javascript">
-		//Put your JavaScript code here.
+	    $(document).ready(function () {
+	        var el = new Everlive({
+	            apiKey: 'pxjW9x5tvwHdFXzI',
+	            masterKey: 'cd4bdDc4AxhjyPMCnsPihkrir3eQeqh1'
+	        });
+	        latestExhibits();
+	    });
     </script>
 	<telerik:RadAjaxManager ID="RadAjaxManager1" runat="server">
 	</telerik:RadAjaxManager>
@@ -43,6 +52,7 @@
 
     <div id="mainPageRightColumn">
         <h3>Newest Exhibits</h3>
+        <div id="newestExhibits"></div>
     </div>
 
     <div id="pageFooter">
