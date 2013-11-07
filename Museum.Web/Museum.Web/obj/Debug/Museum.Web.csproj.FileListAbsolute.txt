@@ -1,7 +1,0 @@
-C:\Users\townsend\Documents\MuseumWebApp\Museum.Web\Museum.Web\bin\Museum.Web.dll
-C:\Users\townsend\Documents\MuseumWebApp\Museum.Web\Museum.Web\bin\Museum.Web.pdb
-C:\Users\townsend\Documents\MuseumWebApp\Museum.Web\Museum.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
-C:\Users\townsend\Documents\MuseumWebApp\Museum.Web\Museum.Web\bin\Telerik.Web.UI.xml
-C:\Users\townsend\Documents\MuseumWebApp\Museum.Web\Museum.Web\obj\Debug\Museum.Web.csprojResolveAssemblyReference.cache
-C:\Users\townsend\Documents\MuseumWebApp\Museum.Web\Museum.Web\obj\Debug\Museum.Web.dll
-C:\Users\townsend\Documents\MuseumWebApp\Museum.Web\Museum.Web\obj\Debug\Museum.Web.pdb
