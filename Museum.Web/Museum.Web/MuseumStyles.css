@@ -1,0 +1,17 @@
+﻿body {
+}
+
+#pageHeader {
+    height: 200px;
+    width: 100%;
+}
+
+#mainPageLeftColumn {
+    width: 50%;
+    float: left;
+}
+
+#mainPageRightColumn {
+    width: 50%;
+    float: right;
+}
