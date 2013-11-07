@@ -1,0 +1,12 @@
+﻿@model IEnumerable<Museum.WebApp.Models.ExhibitViewModel>
+@{
+    ViewBag.Title = "Exhibits";
+}
+
+<h2>Exhibits</h2>
+@foreach(var exhibit in Model)
+{
+    <div>
+        <a href="/home/gallery/@exhibit.Id">@exhibit.Title</a>
+    </div>
+}

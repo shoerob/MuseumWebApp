@@ -1,0 +1,13 @@
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Everlive\obj\Debug\Everlive.csprojResolveAssemblyReference.cache
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Everlive\bin\Debug\Everlive.dll
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Everlive\bin\Debug\Everlive.pdb
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Everlive\bin\Debug\HttpRestClient.dll
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Everlive\bin\Debug\Newtonsoft.Json.dll
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Everlive\bin\Debug\System.Web.Http.dll
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Everlive\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Everlive\bin\Debug\HttpRestClient.pdb
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Everlive\bin\Debug\Newtonsoft.Json.xml
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Everlive\bin\Debug\System.Web.Http.xml
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Everlive\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Everlive\obj\Debug\Everlive.dll
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Everlive\obj\Debug\Everlive.pdb

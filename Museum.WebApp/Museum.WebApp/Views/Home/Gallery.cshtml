@@ -1,0 +1,26 @@
+﻿@model Museum.WebApp.Models.ExhibitViewModel
+@{
+    ViewBag.Title = "Exhibit Gallery";    
+}
+
+<h2>@Model.Title</h2>
+<h3>@Model.Title</h3>
+<h4>@Model.CreatedAt</h4>
+<div>
+    @Model.Description
+</div>
+@foreach(var artifact in Model.Artifacts)
+{
+    <div>
+    <div>
+        <img style="width:100px; height:200px;" src="
+            @string.Format("http://api.everlive.com/v1/pxjW9x5tvwHdFXzI/Files/{0}/Download", artifact.Image)" />
+    </div>
+    <div>
+        <h3>@artifact.Title</h3>
+        <div>
+            @artifact.Description
+        </div>
+    </div>
+        </div>
+}

@@ -1,0 +1,148 @@
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\Museum.WebApp.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\Museum.WebApp.pdb
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\Antlr3.Runtime.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\EntityFramework.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\Microsoft.Data.Edm.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\Microsoft.Data.OData.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\Microsoft.Web.Infrastructure.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Net.Http.Formatting.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Spatial.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.Helpers.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.Http.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.Http.OData.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.Http.Tracing.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.Http.WebHost.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.Mvc.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.Optimization.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.Providers.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.Razor.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.WebPages.Deployment.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.WebPages.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.WebPages.Razor.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\WebGrease.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\EntityFramework.xml
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Net.Http.Formatting.xml
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.Helpers.xml
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.Http.xml
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.Http.WebHost.xml
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.Mvc.xml
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.Razor.xml
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.WebPages.xml
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.WebPages.Deployment.xml
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.WebPages.Razor.xml
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.Http.Tracing.xml
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Web.Http.OData.xml
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\Microsoft.Data.Edm.xml
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\Microsoft.Data.OData.xml
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\System.Spatial.xml
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\de\Microsoft.Data.Edm.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\es\Microsoft.Data.Edm.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\fr\Microsoft.Data.Edm.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\it\Microsoft.Data.Edm.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\ja\Microsoft.Data.Edm.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\ko\Microsoft.Data.Edm.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\ru\Microsoft.Data.Edm.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\de\Microsoft.Data.OData.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\es\Microsoft.Data.OData.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\fr\Microsoft.Data.OData.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\it\Microsoft.Data.OData.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\ja\Microsoft.Data.OData.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\ko\Microsoft.Data.OData.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\ru\Microsoft.Data.OData.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\de\System.Spatial.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\es\System.Spatial.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\fr\System.Spatial.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\it\System.Spatial.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\ja\System.Spatial.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\ko\System.Spatial.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\ru\System.Spatial.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\zh-Hans\System.Spatial.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\zh-Hant\System.Spatial.resources.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\obj\Debug\Museum.WebApp.csprojResolveAssemblyReference.cache
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\obj\Debug\Museum.WebApp.dll
+c:\users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\obj\Debug\Museum.WebApp.pdb
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\Everlive.dll
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\HttpRestClient.dll
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\Newtonsoft.Json.dll
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\Everlive.pdb
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\HttpRestClient.pdb
+C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\Museum.WebApp\bin\Newtonsoft.Json.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\Museum.WebApp.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\Museum.WebApp.pdb
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\Antlr3.Runtime.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\EntityFramework.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\Everlive.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\HttpRestClient.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\Microsoft.Data.Edm.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\Microsoft.Data.OData.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\Microsoft.Web.Infrastructure.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\Newtonsoft.Json.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Net.Http.Formatting.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Spatial.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.Helpers.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.Http.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.Http.OData.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.Http.Tracing.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.Http.WebHost.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.Mvc.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.Optimization.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.Providers.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.Razor.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.WebPages.Deployment.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.WebPages.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.WebPages.Razor.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\WebGrease.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\Everlive.pdb
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\HttpRestClient.pdb
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\Newtonsoft.Json.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\EntityFramework.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Net.Http.Formatting.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.Helpers.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.Http.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.Http.WebHost.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.Mvc.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.Razor.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.WebPages.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.WebPages.Deployment.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.WebPages.Razor.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.Http.Tracing.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Web.Http.OData.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\Microsoft.Data.Edm.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\Microsoft.Data.OData.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\System.Spatial.xml
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\de\Microsoft.Data.Edm.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\es\Microsoft.Data.Edm.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\fr\Microsoft.Data.Edm.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\it\Microsoft.Data.Edm.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\ja\Microsoft.Data.Edm.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\ko\Microsoft.Data.Edm.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\ru\Microsoft.Data.Edm.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\de\Microsoft.Data.OData.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\es\Microsoft.Data.OData.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\fr\Microsoft.Data.OData.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\it\Microsoft.Data.OData.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\ja\Microsoft.Data.OData.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\ko\Microsoft.Data.OData.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\ru\Microsoft.Data.OData.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\de\System.Spatial.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\es\System.Spatial.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\fr\System.Spatial.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\it\System.Spatial.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\ja\System.Spatial.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\ko\System.Spatial.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\ru\System.Spatial.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\zh-Hans\System.Spatial.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\bin\zh-Hant\System.Spatial.resources.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\obj\Debug\Museum.WebApp.csprojResolveAssemblyReference.cache
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\obj\Debug\Museum.WebApp.dll
+C:\Git\museumwebapp\Museum.WebApp\Museum.WebApp\obj\Debug\Museum.WebApp.pdb
