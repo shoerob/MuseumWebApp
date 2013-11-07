@@ -8,3 +8,14 @@ C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\HttpRestCl
 C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\HttpRestClient\bin\Debug\System.Net.Http.Formatting.xml
 C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\HttpRestClient\obj\Debug\HttpRestClient.dll
 C:\Users\townsend\documents\visual studio 2012\Projects\Museum.WebApp\HttpRestClient\obj\Debug\HttpRestClient.pdb
+D:\dev\MuseumWebApp\Museum.WebApp\HttpRestClient\bin\Debug\HttpRestClient.dll
+D:\dev\MuseumWebApp\Museum.WebApp\HttpRestClient\bin\Debug\HttpRestClient.pdb
+D:\dev\MuseumWebApp\Museum.WebApp\HttpRestClient\bin\Debug\Newtonsoft.Json.dll
+D:\dev\MuseumWebApp\Museum.WebApp\HttpRestClient\bin\Debug\System.Web.Http.dll
+D:\dev\MuseumWebApp\Museum.WebApp\HttpRestClient\bin\Debug\System.Net.Http.Formatting.dll
+D:\dev\MuseumWebApp\Museum.WebApp\HttpRestClient\bin\Debug\Newtonsoft.Json.xml
+D:\dev\MuseumWebApp\Museum.WebApp\HttpRestClient\bin\Debug\System.Web.Http.xml
+D:\dev\MuseumWebApp\Museum.WebApp\HttpRestClient\bin\Debug\System.Net.Http.Formatting.xml
+D:\dev\MuseumWebApp\Museum.WebApp\HttpRestClient\obj\Debug\HttpRestClient.csprojResolveAssemblyReference.cache
+D:\dev\MuseumWebApp\Museum.WebApp\HttpRestClient\obj\Debug\HttpRestClient.dll
+D:\dev\MuseumWebApp\Museum.WebApp\HttpRestClient\obj\Debug\HttpRestClient.pdb
