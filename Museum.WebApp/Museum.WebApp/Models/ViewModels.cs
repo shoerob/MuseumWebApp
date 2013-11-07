@@ -12,6 +12,7 @@ namespace Museum.WebApp.Models
         public string Description { get; set; }
         public string Tag { get; set; }
         public string CreatedAt { get; set; }
+        public string ExihibitId { get; set; }
         public string Image { get; set; }
     }
     public class ExhibitViewModel
