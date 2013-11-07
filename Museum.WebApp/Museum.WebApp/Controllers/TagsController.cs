@@ -3,16 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading.Tasks;
 using System.Web.Http;
+using EverLive;
+using Museum.WebApp.Models;
 
 namespace Museum.WebApp.Controllers
 {
-    public class ValuesController : ApiController
+    public class TagsController : ApiController
     {
+        private IEverliveRestClient _everlive;
         // GET api/values
-        public IEnumerable<string> Get()
+        public async Task<IEnumerable<string>> Get()
         {
-            return new string[] { "value1", "value2" };
+            _everlive = new EverliveRestClient(new HttpRestClient.HttpRestClient());
+            var tags = await _everlive.All<ArtifactViewModel>("Artifact", fields: "{ \"Tag\": 1 }");
+            return tags.Select(e => e.Tag).Distinct();
         }
 
         // GET api/values/5

@@ -14,16 +14,28 @@ namespace Museum.WebApp.Controllers
         private IEverliveRestClient _everlive;
         public async Task<ActionResult> Index()
         {
-            return View();
+            try
+            {
+                return await Exhibits();                
+            }
+            catch
+            {
+                return View();
+            }
         }
 
-        public async Task<ActionResult> Exhibits()
+        public async Task<ActionResult> Exhibits(string id = "")
         {
             try
             {
-                _everlive = new EverliveRestClient(new HttpRestClient.HttpRestClient());
-                var exhibits = await _everlive.All<ExhibitViewModel>("Exhibit");                
-
+                _everlive = new EverliveRestClient(new HttpRestClient.HttpRestClient());                
+                var exhibits = await _everlive.All<ExhibitViewModel>("Exhibit");
+                if (!string.IsNullOrWhiteSpace(id))
+                {
+                    var artifacts = await _everlive.All<ArtifactViewModel>("Artifact", string.Format("{{ \"Tag\": \"{0}\"}}", id));
+                    exhibits = exhibits.Where(e => artifacts.Any(a => a.ExihibitId == e.Id));
+                }
+               
                 return View(exhibits);
             }
             catch
@@ -31,6 +43,7 @@ namespace Museum.WebApp.Controllers
                 return RedirectToAction("Index");
             }
         }
+     
         //exhibit id
         public async Task<ActionResult> Gallery(string id)
         {
