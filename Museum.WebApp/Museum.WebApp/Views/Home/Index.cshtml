@@ -51,7 +51,10 @@
 
         <h3>@featured.Title</h3>
         <span>by @featured.CreatedByUser.UserName</span>
+        <br />
+        <span>@featured.CreatedAtString</span>
         <p>@featured.Description</p>
+        @Html.ActionLink("See full exhibit", "Gallery", new { id = featured.Id }, new{@class="fullExhibitLink"})
     </section>
     <section id="recentExhibits" class="content-wrapper main-content">
         <h2>Newest Exhibits</h2>
@@ -73,11 +76,12 @@
                     <img src="@artifactForDisplay.ImageUrl" alt="@artifactForDisplay.Title" 
                         class="recentExhibitImage" width="80" height="160" />
                     <h3>@exhibit.Title by @exhibit.CreatedByUser.UserName</h3>
-                    <h4>@exhibit.CreatedAt</h4>
+                    <h4>@exhibit.CreatedAtString</h4>
                     <p>@exhibit.Description</p>
                 </div>
     
             }
         }
+        @Html.ActionLink("See all exhibits", "Exhibits", null, new { @class = "allExhibitsLink" })
     </section>
 </section>

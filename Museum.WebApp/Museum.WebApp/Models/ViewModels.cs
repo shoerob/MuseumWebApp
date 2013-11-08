@@ -51,6 +51,15 @@ namespace Museum.WebApp.Models
         public string Description { get; set; }
         public UserViewModel CreatedByUser { get; set; }
         public IEnumerable<ArtifactViewModel> Artifacts { get; set; }
+        public string CreatedAtString { 
+            get{
+                DateTime val = DateTime.Now;
+                if (DateTime.TryParse(this.CreatedAt, out val))
+                    return val.ToString("U");
+                else
+                    return "N/A";
+            }
+        }
     }
     public class MuseumViewModel
     {
