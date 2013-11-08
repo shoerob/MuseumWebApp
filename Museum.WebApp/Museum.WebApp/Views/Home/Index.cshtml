@@ -13,7 +13,7 @@
 }
 ﻿<section id="body">
     <section class="featured">
-        <div class="content-wrapper">
+        <div class="content-wrapper clear-fix">
             <hgroup class="title">
                 <h1>Curate your life</h1>
             </hgroup>
@@ -21,12 +21,17 @@
                 Capture, catalog and share the uniqueness that defines you. Simply upload your photos with descriptions and then organize them into exhibits. It’s a new way to present and share your distinct world.
 
             </p>
+            <div class="screenshots">
+                <img src="images/ExhibitsList_Transparent.png" />
+                <img src="images/FakeSplash.png" class="bigger" />
+                <img src="images/ArtifactsList_Transparent.png" />
+            </div>
         </div>
     </section>
     <section class="content-wrapper main-content clear-fix">
         <article id="featuredExhibit" class="article-half">
             <h2>Featured Exhibit</h2>
-            @{
+            @* @{
     
     
                 for (int i = 0; i < 5; i++)
@@ -45,10 +50,10 @@
                         artifact.Title = "Artifact Image Placeholder";
                     }
        
-                    <img src="@artifact.ImageUrl" alt="@artifact.Title" width="80" height="160" />
+                    <img src="@artifact.ImageUrl" alt="@artifact.Title" class="artifact" />
                 }
      
-            }
+            } 
 
 
             <h3>@featured.Title</h3>
@@ -56,7 +61,20 @@
             <br />
             <span>@featured.CreatedAtString</span>
             <p>@featured.Description</p>
-            @Html.ActionLink("See full exhibit", "Gallery", new { id = featured.Id }, new{@class="fullExhibitLink"})
+            @Html.ActionLink("See full exhibit", "Gallery", new { id = featured.Id }, new{@class="fullExhibitLink"})*@
+
+            <img src="images/fakeit/photo 4.jpg" class="artifact"/>
+            <img src="images/fakeit/photo 5.jpg" class="artifact"/>
+            <img src="images/fakeit/photo 01.jpg" class="artifact"/>
+            <img src="images/fakeit/photo 02.jpg" class="artifact"/>
+
+            <h3>Handblown Glass Collection</h3>
+            <span>by CSteinert</span>
+            <br />
+            <span>Friday, November 08, 9:00 AM</span>
+            <p>My collection is small, and doesn't boast pieces from any of the glassblowing greats, but each item has a story for me. I come from a family of glassblowing enablers, and most of my items are gifts from them. Thanks for checking them out.</p>
+            <a href="#">See full exhibit</a>
+
         </article>
         <article id="recentExhibits" class="article-half">
             <h2>Newest Exhibits</h2>
@@ -77,7 +95,7 @@
         
                         <li class="clear-fix">
                             <img src="@artifactForDisplay.ImageUrl" alt="@artifactForDisplay.Title" 
-                                class="recentExhibitImage" />
+                                class="recentExhibitImage artifact"/>
                             <h3><a href="/home/gallery/@exhibit.Id">@exhibit.Title</a> <span>by @exhibit.CreatedByUser.UserName</span></h3>
                             <span>@exhibit.CreatedAtString</span>
                             <p>@exhibit.Description</p>

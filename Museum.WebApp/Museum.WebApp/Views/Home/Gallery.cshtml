@@ -4,11 +4,10 @@
 }
 <div class="content-wrapper">
     <h2>@Model.Title</h2>
-    <h3>@Model.Title</h3>
-    <h4>@Model.CreatedAt</h4>
-    <div>
+    <span>@Model.CreatedAt</span>
+    <p>
         @Model.Description
-    </div>
+    </p>
     <div id="gallery" class="galleria">
     @foreach(var artifact in Model.Artifacts)
     {    
