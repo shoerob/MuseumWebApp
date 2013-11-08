@@ -1,10 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 
 namespace Museum.WebApp.Models
 {
+    public class MainPageViewModel
+    {
+        public List<ExhibitViewModel> RecentExhibits { get; set; }
+    }
+
     public class ArtifactViewModel
     {
         public string Id { get; set; }
@@ -14,6 +20,20 @@ namespace Museum.WebApp.Models
         public string CreatedAt { get; set; }
         public string ExihibitId { get; set; }
         public string Image { get; set; }
+        public string ImageUrl
+        {
+            get
+            {
+                if (this.Image != null)
+                {
+                    return string.Format(ConfigurationManager.AppSettings["EverliveImageFormat"], this.Image);
+                }
+                else
+                {
+                    return ConfigurationManager.AppSettings["ImagePlaceHolder"];
+                }
+            }
+        }
     }
     public class ExhibitViewModel
     {

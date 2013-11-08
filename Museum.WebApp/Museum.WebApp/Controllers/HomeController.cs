@@ -11,12 +11,20 @@ namespace Museum.WebApp.Controllers
 {
     public class HomeController : Controller
     {
-        private IEverliveRestClient _everlive;
+        private IEverliveRestClient _everlive = new EverliveRestClient(new HttpRestClient.HttpRestClient());
+
         public async Task<ActionResult> Index()
         {
             try
             {
-                return await Exhibits();                
+                IEnumerable<ExhibitViewModel> latestExhibits = await _getRecentExhibits();
+                foreach (var exhibit in latestExhibits)
+                {
+                    exhibit.Artifacts = await _getExhibitArtifacts(exhibit.Id);
+                }
+                MainPageViewModel vm = new MainPageViewModel();
+                vm.RecentExhibits = latestExhibits.ToList<ExhibitViewModel>();
+                return View(vm);
             }
             catch
             {
@@ -27,8 +35,7 @@ namespace Museum.WebApp.Controllers
         public async Task<ActionResult> Exhibits(string id = "")
         {
             try
-            {
-                _everlive = new EverliveRestClient(new HttpRestClient.HttpRestClient());                
+            {           
                 var exhibits = await _everlive.All<ExhibitViewModel>("Exhibit");
                 if (!string.IsNullOrWhiteSpace(id))
                 {
@@ -48,7 +55,6 @@ namespace Museum.WebApp.Controllers
         {
             try
             {
-                _everlive = new EverliveRestClient(new HttpRestClient.HttpRestClient());
                 var museums = await _everlive.All<ExhibitViewModel>("Museum");
                 
                 return View(museums);
@@ -64,7 +70,6 @@ namespace Museum.WebApp.Controllers
         {
             try
             {
-                _everlive = new EverliveRestClient(new HttpRestClient.HttpRestClient());
                 var exhibit = await _everlive.GetById<ExhibitViewModel>("Exhibit", id);
                 var artifacts = await _everlive.All<ArtifactViewModel>("Artifact", string.Format("{{ \"ExihibitId\": \"{0}\" }}", id));
                 exhibit.Artifacts = artifacts;
@@ -74,6 +79,34 @@ namespace Museum.WebApp.Controllers
             catch
             {
                 return RedirectToAction("Index");
+            }
+        }
+
+
+        private async Task<IEnumerable<ExhibitViewModel>> _getRecentExhibits()
+        {
+            try
+            {
+
+                var exhibits = await _everlive.All<ExhibitViewModel>("Exhibit", "", "{\"CreatedAt\": -1}", 5);
+                return exhibits;
+            }
+            catch (Exception)
+            {
+                return null;
+            }
+        }
+
+        private async Task<IEnumerable<ArtifactViewModel>> _getExhibitArtifacts(string exhibitId)
+        {
+            try
+            {
+                var artifacts = await _everlive.All<ArtifactViewModel>("Artifact", string.Format("{{ \"ExihibitId\": \"{0}\" }}", exhibitId));
+                return artifacts;
+            }
+            catch (Exception)
+            {
+                return null;
             }
         }
     }
