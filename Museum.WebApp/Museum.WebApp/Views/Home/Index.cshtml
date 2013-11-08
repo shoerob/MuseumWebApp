@@ -50,10 +50,10 @@
 
 
         <h3>@featured.Title</h3>
-        <strong>by USERNAMEHERE</strong><br />
+        <span>by USERNAMEHERE</span>
         <p>@featured.Description</p>
     </section>
-    <section id="recentExhibits">
+    <section id="recentExhibits" class="content-wrapper main-content">
         <h2>Newest Exhibits</h2>
         @{
             foreach (ExhibitViewModel exhibit in Model.RecentExhibits)
