@@ -368,6 +368,23 @@ aside {
     display: block;
 }
 
+/* Exhibits list */
+.exhibits-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+    .exhibits-list li h3 span {
+        font-weight: normal;
+    }
+    .exhibits-list li img {
+        float: left;
+        margin-right: 1em;
+        border: 1px solid #5b5b50;
+        width: 100px;
+        max-height: 200px;
+    }
+
 /* login page */
 #loginForm {
     border-right: solid 2px #c8c8c8;

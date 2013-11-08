@@ -8,24 +8,25 @@
 <div class="content-wrapper">
     <article class="exhibit-list">
         <h2>Exhibits</h2>
-        @foreach(var exhibit in Model)
-        {
-            var artifactForDisplay = new ArtifactViewModel();
-            artifactForDisplay.Title = "Artifact Image Placeholder";
-
-            if (exhibit.Artifacts != null && exhibit.Artifacts.Count() > 0)
+        <ul class="exhibits-list">
+            @foreach(var exhibit in Model)
             {
-                artifactForDisplay = exhibit.Artifacts.ToList<ArtifactViewModel>()[0]; 
-            }    
+                var artifactForDisplay = new ArtifactViewModel();
+                artifactForDisplay.Title = "Artifact Image Placeholder";
+
+                if (exhibit.Artifacts != null && exhibit.Artifacts.Count() > 0)
+                {
+                    artifactForDisplay = exhibit.Artifacts.ToList<ArtifactViewModel>()[0]; 
+                }    
         
-            <div>
-                <img src="@artifactForDisplay.ImageUrl" alt="@artifactForDisplay.Title"
-                    width="80" height="160" />
-                <h3><a href="/home/gallery/@exhibit.Id">@exhibit.Title</a> by @exhibit.CreatedByUser.UserName</h3>
-                <h4>@exhibit.CreatedAtString</h4>
-                <p>@exhibit.Description</p>
-            </div>
-        }
+                <li class="clear-fix">
+                    <img src="@artifactForDisplay.ImageUrl" alt="@artifactForDisplay.Title" />
+                    <h3><a href="/home/gallery/@exhibit.Id">@exhibit.Title</a> <span>by @exhibit.CreatedByUser.UserName</span></h3>
+                    <span>@exhibit.CreatedAtString</span>
+                    <p>@exhibit.Description</p>
+                </li>
+            }
+        </ul>
     </article>
     <aside class="tags">
         <h2>Exhibits by Tag</h2>

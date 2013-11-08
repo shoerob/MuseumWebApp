@@ -58,30 +58,32 @@
     </section>
     <section id="recentExhibits" class="content-wrapper main-content">
         <h2>Newest Exhibits</h2>
-        @{
-            foreach (ExhibitViewModel exhibit in Model.RecentExhibits)
-            {
-                var artifactForDisplay = new ArtifactViewModel();
+        <ul class="exhibits-list">
+            @{
+                foreach (ExhibitViewModel exhibit in Model.RecentExhibits)
+                {
+                    var artifactForDisplay = new ArtifactViewModel();
 
-                if (exhibit.Artifacts != null && exhibit.Artifacts.Count() > 0)
-                {
-                    artifactForDisplay = exhibit.Artifacts.ToList<ArtifactViewModel>()[0];
-                }
-                else
-                {
-                    artifactForDisplay.Title = "Artifact Image Placeholder";
-                }
+                    if (exhibit.Artifacts != null && exhibit.Artifacts.Count() > 0)
+                    {
+                        artifactForDisplay = exhibit.Artifacts.ToList<ArtifactViewModel>()[0];
+                    }
+                    else
+                    {
+                        artifactForDisplay.Title = "Artifact Image Placeholder";
+                    }
         
-                <div id="recentExhibit">
-                    <img src="@artifactForDisplay.ImageUrl" alt="@artifactForDisplay.Title" 
-                        class="recentExhibitImage" width="80" height="160" />
-                    <h3>@exhibit.Title by @exhibit.CreatedByUser.UserName</h3>
-                    <h4>@exhibit.CreatedAtString</h4>
-                    <p>@exhibit.Description</p>
-                </div>
+                    <li class="clear-fix">
+                        <img src="@artifactForDisplay.ImageUrl" alt="@artifactForDisplay.Title" 
+                            class="recentExhibitImage" />
+                        <h3>@exhibit.Title <span>by @exhibit.CreatedByUser.UserName</span></h3>
+                        <span>@exhibit.CreatedAtString</span>
+                        <p>@exhibit.Description</p>
+                    </li>
     
+                }
             }
-        }
+        </ul>
         @Html.ActionLink("See all exhibits", "Exhibits", null, new { @class = "allExhibitsLink" })
     </section>
 </section>
