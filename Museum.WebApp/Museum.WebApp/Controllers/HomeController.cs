@@ -38,10 +38,18 @@ namespace Museum.WebApp.Controllers
             try
             {           
                 var exhibits = await _everlive.All<ExhibitViewModel>("Exhibit");
+                
+                //tag matching
                 if (!string.IsNullOrWhiteSpace(id))
                 {
                     var artifacts = await _everlive.All<ArtifactViewModel>("Artifact", string.Format("{{ \"Tag\": \"{0}\"}}", id));
                     exhibits = exhibits.Where(e => artifacts.Any(a => a.ExihibitId == e.Id));
+                }
+
+                foreach (var exhibit in exhibits)
+                {
+                    exhibit.Artifacts = await _getExhibitArtifacts(exhibit.Id);
+                    exhibit.CreatedByUser = await _getUser(exhibit.CreatedBy);
                 }
                
                 return View(exhibits);

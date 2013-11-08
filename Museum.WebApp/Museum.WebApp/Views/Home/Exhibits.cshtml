@@ -1,4 +1,6 @@
-﻿@model IEnumerable<Museum.WebApp.Models.ExhibitViewModel>
+﻿@using Museum.WebApp.Models;
+
+@model IEnumerable<Museum.WebApp.Models.ExhibitViewModel>
 @{
     ViewBag.Title = "Exhibits";
 }
@@ -8,8 +10,20 @@
         <h2>Exhibits</h2>
         @foreach(var exhibit in Model)
         {
+            var artifactForDisplay = new ArtifactViewModel();
+            artifactForDisplay.Title = "Artifact Image Placeholder";
+
+            if (exhibit.Artifacts != null && exhibit.Artifacts.Count() > 0)
+            {
+                artifactForDisplay = exhibit.Artifacts.ToList<ArtifactViewModel>()[0]; 
+            }    
+        
             <div>
-                <h3><a href="/home/gallery/@exhibit.Id">@exhibit.Title</a></h3>
+                <img src="@artifactForDisplay.ImageUrl" alt="@artifactForDisplay.Title"
+                    width="80" height="160" />
+                <h3><a href="/home/gallery/@exhibit.Id">@exhibit.Title</a> by @exhibit.CreatedByUser.UserName</h3>
+                <h4>@exhibit.CreatedAtString</h4>
+                <p>@exhibit.Description</p>
             </div>
         }
     </article>
