@@ -13,17 +13,14 @@
 </head>
 <body>
     <header>
-        <div class="content-wrapper">
-            <div class="float-left">
-                <p class="site-title">
-                    <a href="~/">Myseum</a></p>
-            </div>
+        <div class="content-wrapper clearfix">
+            <h1 class="site-title"><a href="~/" alt="Myseum Home" title="Myseum Home">Myseum</a></h1>
             <div class="float-right">
                 <nav>
-                   @* <ul id="menu">
-                        <li>@Html.ActionLink("Home", "Index", "Home", new { area = "" }, null)</li>
-                        <li>@Html.ActionLink("API", "Index", "Help", new { area = "" }, null)</li>
-                    </ul>*@
+                   <ul id="menu">
+                        <li>@Html.ActionLink("Download from iTunes", "Index", "Home", new { area = "" }, null)</li>
+                        <li>@Html.ActionLink("Download from the Play Store", "Index", "Help", new { area = "" }, null)</li>
+                    </ul>
                 </nav>
             </div>
         </div>

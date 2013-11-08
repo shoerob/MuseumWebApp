@@ -6,8 +6,8 @@
 .galleria{ width: 700px; height: 400px; background: #000 }
 
 body {
-    background-color: #fff;
-    border-top: solid 10px #000;
+    background-color: #eee;
+    border-top: solid 10px #5b5b50;
     color: #333;
     font-size: .85em;
     font-family: "Segoe UI", Verdana, Helvetica, Sans-Serif;
@@ -25,7 +25,7 @@ a {
 
     a:link, a:visited,
     a:active, a:hover {
-        color: #333;
+        color: #5b5b50;
     }
 
     a:hover {
@@ -61,7 +61,7 @@ mark {
 
 h1, h2, h3,
 h4, h5, h6 {
-    color: #000;
+    color: #5b5b50;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -130,10 +130,9 @@ footer {
 /* site title
 ----------------------------------------------------------*/
 .site-title {
-    color: #c8c8c8;
-    font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
-    font-size: 2.3em;
     margin: 0;
+    width: 300px;
+    float: left;
 }
 
 .site-title a, .site-title a:hover, .site-title a:active {
@@ -760,4 +759,32 @@ tr.pager td {
         footer p {
             margin: 0;
         }
+}
+
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+    *zoom: 1;
 }

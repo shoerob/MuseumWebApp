@@ -3,18 +3,20 @@
     ViewBag.Title = "Exhibits";
 }
 
-<h2>Exhibits</h2>
-@foreach(var exhibit in Model)
-{
+<div class="content-wrapper">
+    <h2>Exhibits</h2>
+    @foreach(var exhibit in Model)
+    {
+        <div>
+            <a href="/home/gallery/@exhibit.Id">@exhibit.Title</a>
+        </div>
+    }
     <div>
-        <a href="/home/gallery/@exhibit.Id">@exhibit.Title</a>
+        <h2>Exhibits by Tag</h2>
+        <div id="TagCloud" style="width:300px;"></div>
     </div>
-}
-<div><h2>Exhibits by Tag</h2>
-<div id="TagCloud" style="width:300px;">
-    
 </div>
-</div>
+
 <script type="text/javascript">
     $(document).ready(function () {
         $.getJSON("/api/tags", null, function (data) {
