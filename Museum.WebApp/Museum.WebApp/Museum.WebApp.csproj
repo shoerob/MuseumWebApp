@@ -241,7 +241,23 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
     <None Include="Properties\PublishProfiles\Hackathon.pubxml" />
+    <None Include="Properties\PublishProfiles\myseum - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\myseum - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Images\AddArtifact_transparent.png" />
+    <Content Include="Images\ArtifactsList_transparent.png" />
+    <Content Include="Images\ExhibitsList_Transparent.png" />
+    <Content Include="Images\fakeit\photo 01.JPG" />
+    <Content Include="Images\fakeit\photo 02.JPG" />
+    <Content Include="Images\fakeit\photo 03.JPG" />
+    <Content Include="Images\fakeit\photo 1.JPG" />
+    <Content Include="Images\fakeit\photo 2.JPG" />
+    <Content Include="Images\fakeit\photo 3.JPG" />
+    <Content Include="Images\fakeit\photo 4.JPG" />
+    <Content Include="Images\fakeit\photo 5.JPG" />
+    <Content Include="Images\FakeSplash.png" />
+    <Content Include="Images\Myseum---Android-Apps-on-Google-Play3.jpg" />
+    <Content Include="Images\Myseum-on-the-App-Store-on-iTunes3.jpg" />
     <Content Include="Images\MyseumLogo.png" />
     <Content Include="Scripts\galleria-1.3.2.js" />
     <Content Include="Scripts\galleria-1.3.2.min.js" />
@@ -296,6 +312,8 @@
     <Content Include="Views\Home\Gallery.cshtml" />
     <Content Include="Views\Home\Exhibits.cshtml" />
     <Content Include="Views\Home\Museums.cshtml" />
+    <Content Include="Views\Home\ITunes.cshtml" />
+    <Content Include="Views\Home\GooglePlay.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

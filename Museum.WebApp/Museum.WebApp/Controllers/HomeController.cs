@@ -73,6 +73,16 @@ namespace Museum.WebApp.Controllers
                 return RedirectToAction("Index");
             }
         }
+
+        public async Task<ActionResult> ITunes()
+        {
+            return View();
+        }
+
+        public async Task<ActionResult> GooglePlay()
+        {
+            return View();
+        }
      
         //exhibit id
         public async Task<ActionResult> Gallery(string id)
