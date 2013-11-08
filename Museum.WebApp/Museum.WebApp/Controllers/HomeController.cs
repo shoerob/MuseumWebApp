@@ -43,6 +43,21 @@ namespace Museum.WebApp.Controllers
                 return RedirectToAction("Index");
             }
         }
+
+        public async Task<ActionResult> Museums()
+        {
+            try
+            {
+                _everlive = new EverliveRestClient(new HttpRestClient.HttpRestClient());
+                var museums = await _everlive.All<ExhibitViewModel>("Museum");
+                
+                return View(museums);
+            }
+            catch
+            {
+                return RedirectToAction("Index");
+            }
+        }
      
         //exhibit id
         public async Task<ActionResult> Gallery(string id)
@@ -53,7 +68,7 @@ namespace Museum.WebApp.Controllers
                 var exhibit = await _everlive.GetById<ExhibitViewModel>("Exhibit", id);
                 var artifacts = await _everlive.All<ArtifactViewModel>("Artifact", string.Format("{{ \"ExihibitId\": \"{0}\" }}", id));
                 exhibit.Artifacts = artifacts;
-
+                _everlive.All<ExhibitViewModel>("Exhibit", "", "{ \"CreatedAt\": 1 }", 4);
                 return View(exhibit);
             }
             catch

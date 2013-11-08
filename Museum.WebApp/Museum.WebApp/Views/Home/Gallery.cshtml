@@ -9,13 +9,13 @@
 <div>
     @Model.Description
 </div>
-@*<div id="gallery" class="galleria">
+<div id="gallery" class="galleria">
 @foreach(var artifact in Model.Artifacts)
 {    
    <img src="@string.Format("http://api.everlive.com/v1/pxjW9x5tvwHdFXzI/Files/{0}/Download", artifact.Image)" data-title="@artifact.Title" data-description="@artifact.Description">                
 }
-</div>*@
-@foreach(var artifact in Model.Artifacts)
+</div>
+@*@foreach(var artifact in Model.Artifacts)
 {
     <div>
         <img style="width:100px; height:200px;" src="
@@ -27,8 +27,8 @@
             @artifact.Description
         </div>
     </div>
-}
-@*<script>
+}*@
+<script>
     $(document).ready(function () {
         Galleria.configure({
             imageCrop: true,
@@ -39,4 +39,4 @@
         Galleria.run('.galleria');
        
     });
-</script>*@
+</script>

@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
 }
-#galleria{height:467px}
+.galleria{ width: 700px; height: 400px; background: #000 }
 
 body {
     background-color: #fff;
