@@ -338,6 +338,12 @@ article {
     float: left;
     width: 70%;
 }
+.article-half {
+    width: 45%;
+}
+    .article-half + .article-half {
+        margin-left: 10%;
+    }
 
 aside {
     float: right;
@@ -348,11 +354,6 @@ aside {
         list-style: none;
         padding: 0;
     }
-
-        aside ul li {
-            background: url("../Images/bullet.png") no-repeat 0 50%;
-            padding: 2px 0 2px 20px;
-        }
 
 .label {
     font-weight: 700;

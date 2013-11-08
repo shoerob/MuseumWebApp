@@ -15,75 +15,78 @@
     <section class="featured">
         <div class="content-wrapper">
             <hgroup class="title">
-                <h1>Share your collections with the world.</h1>
+                <h1>Curate your life.</h1>
             </hgroup>
             <p>
-                Some text about how cool this service is and what it does and which OSes are supported and maybe how we built it yadda yadda yadda oh man we're totally going to win this hackathon, you guys.
+                Capture, catalog and share the uniqueness that defines you. Simply upload your photos with descriptions and then organize them into exhibits. It’s a new way to present and share your distinct world.
+
             </p>
         </div>
     </section>
-    <section id="featuredExhibit" class="content-wrapper main-content clear-fix">
-        <h2>Featured Exhibit</h2>
-        @{
-    
-    
-            for (int i = 0; i < 5; i++)
-            {
-                ArtifactViewModel artifact = new ArtifactViewModel();
-       
-       
-                if(featured.Artifacts!=null && i<=(featured.Artifacts.Count()-1))
-                {
-                    artifact = featured.Artifacts.ToList<ArtifactViewModel>()[i];
-            
-                }
-                else
-                {
-           
-                    artifact.Title = "Artifact Image Placeholder";
-                }
-       
-                <img src="@artifact.ImageUrl" alt="@artifact.Title" width="80" height="160" />
-            }
-     
-        }
-
-
-        <h3>@featured.Title</h3>
-        <span>by @featured.CreatedByUser.UserName</span>
-        <br />
-        <span>@featured.CreatedAtString</span>
-        <p>@featured.Description</p>
-        @Html.ActionLink("See full exhibit", "Gallery", new { id = featured.Id }, new{@class="fullExhibitLink"})
-    </section>
-    <section id="recentExhibits" class="content-wrapper main-content">
-        <h2>Newest Exhibits</h2>
-        <ul class="exhibits-list">
+    <section class="content-wrapper main-content clear-fix">
+        <article id="featuredExhibit" class="article-half">
+            <h2>Featured Exhibit</h2>
             @{
-                foreach (ExhibitViewModel exhibit in Model.RecentExhibits)
+    
+    
+                for (int i = 0; i < 5; i++)
                 {
-                    var artifactForDisplay = new ArtifactViewModel();
-
-                    if (exhibit.Artifacts != null && exhibit.Artifacts.Count() > 0)
+                    ArtifactViewModel artifact = new ArtifactViewModel();
+       
+       
+                    if(featured.Artifacts!=null && i<=(featured.Artifacts.Count()-1))
                     {
-                        artifactForDisplay = exhibit.Artifacts.ToList<ArtifactViewModel>()[0];
+                        artifact = featured.Artifacts.ToList<ArtifactViewModel>()[i];
+            
                     }
                     else
                     {
-                        artifactForDisplay.Title = "Artifact Image Placeholder";
+           
+                        artifact.Title = "Artifact Image Placeholder";
                     }
-        
-                    <li class="clear-fix">
-                        <img src="@artifactForDisplay.ImageUrl" alt="@artifactForDisplay.Title" 
-                            class="recentExhibitImage" />
-                        <h3>@exhibit.Title <span>by @exhibit.CreatedByUser.UserName</span></h3>
-                        <span>@exhibit.CreatedAtString</span>
-                        <p>@exhibit.Description</p>
-                    </li>
-    
+       
+                    <img src="@artifact.ImageUrl" alt="@artifact.Title" width="80" height="160" />
                 }
+     
             }
-        </ul>
-        @Html.ActionLink("See all exhibits", "Exhibits", null, new { @class = "allExhibitsLink" })
+
+
+            <h3>@featured.Title</h3>
+            <span>by @featured.CreatedByUser.UserName</span>
+            <br />
+            <span>@featured.CreatedAtString</span>
+            <p>@featured.Description</p>
+            @Html.ActionLink("See full exhibit", "Gallery", new { id = featured.Id }, new{@class="fullExhibitLink"})
+        </article>
+        <article id="recentExhibits" class="article-half">
+            <h2>Newest Exhibits</h2>
+            <ul class="exhibits-list">
+                @{
+                    foreach (ExhibitViewModel exhibit in Model.RecentExhibits)
+                    {
+                        var artifactForDisplay = new ArtifactViewModel();
+
+                        if (exhibit.Artifacts != null && exhibit.Artifacts.Count() > 0)
+                        {
+                            artifactForDisplay = exhibit.Artifacts.ToList<ArtifactViewModel>()[0];
+                        }
+                        else
+                        {
+                            artifactForDisplay.Title = "Artifact Image Placeholder";
+                        }
+        
+                        <li class="clear-fix">
+                            <img src="@artifactForDisplay.ImageUrl" alt="@artifactForDisplay.Title" 
+                                class="recentExhibitImage" />
+                            <h3><a href="/home/gallery/@exhibit.Id">@exhibit.Title</a> <span>by @exhibit.CreatedByUser.UserName</span></h3>
+                            <span>@exhibit.CreatedAtString</span>
+                            <p>@exhibit.Description</p>
+                        </li>
+    
+                    }
+                }
+            </ul>
+            @Html.ActionLink("See all exhibits", "Exhibits", null, new { @class = "allExhibitsLink" })
+        </article>
     </section>
 </section>
