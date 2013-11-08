@@ -141,6 +141,12 @@ footer {
     color: #c8c8c8;
     outline: none;
     text-decoration: none;
+    background: url(/Images/MyseumLogo.png) no-repeat;
+    width: 273px;
+    height: 77px;
+    display: block;
+    text-indent: 99999px;
+    direction: rtl;
 }
 
 
