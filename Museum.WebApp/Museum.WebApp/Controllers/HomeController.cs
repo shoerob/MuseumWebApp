@@ -21,6 +21,7 @@ namespace Museum.WebApp.Controllers
                 foreach (var exhibit in latestExhibits)
                 {
                     exhibit.Artifacts = await _getExhibitArtifacts(exhibit.Id);
+                    exhibit.CreatedByUser = await _getUser(exhibit.CreatedBy);
                 }
                 MainPageViewModel vm = new MainPageViewModel();
                 vm.RecentExhibits = latestExhibits.ToList<ExhibitViewModel>();
@@ -108,6 +109,21 @@ namespace Museum.WebApp.Controllers
             {
                 return null;
             }
+        }
+
+        private async Task<UserViewModel> _getUser(string userGuid)
+        {
+            UserViewModel retvalue = new UserViewModel();
+            retvalue.UserName = "N/A";
+            try
+            {
+                IEnumerable<UserViewModel> users = await _everlive.All<UserViewModel>("Users", string.Format("{{ \"Id\": \"{0}\" }}", userGuid));
+                if (users != null && users.Count() > 0)
+                    retvalue = users.ToArray()[0];
+                return retvalue;
+
+            }
+            catch (Exception) { return null; }
         }
     }
 }

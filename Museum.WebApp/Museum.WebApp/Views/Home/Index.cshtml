@@ -50,7 +50,7 @@
 
 
         <h3>@featured.Title</h3>
-        <span>by USERNAMEHERE</span>
+        <span>by @featured.CreatedByUser.UserName</span>
         <p>@featured.Description</p>
     </section>
     <section id="recentExhibits" class="content-wrapper main-content">
@@ -72,7 +72,7 @@
                 <div id="recentExhibit">
                     <img src="@artifactForDisplay.ImageUrl" alt="@artifactForDisplay.Title" 
                         class="recentExhibitImage" width="80" height="160" />
-                    <h3>@exhibit.Title by USERNAME</h3>
+                    <h3>@exhibit.Title by @exhibit.CreatedByUser.UserName</h3>
                     <h4>@exhibit.CreatedAt</h4>
                     <p>@exhibit.Description</p>
                 </div>
