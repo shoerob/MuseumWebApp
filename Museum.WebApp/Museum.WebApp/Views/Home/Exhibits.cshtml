@@ -4,17 +4,19 @@
 }
 
 <div class="content-wrapper">
-    <h2>Exhibits</h2>
-    @foreach(var exhibit in Model)
-    {
-        <div>
-            <a href="/home/gallery/@exhibit.Id">@exhibit.Title</a>
-        </div>
-    }
-    <div>
+    <article class="exhibit-list">
+        <h2>Exhibits</h2>
+        @foreach(var exhibit in Model)
+        {
+            <div>
+                <h3><a href="/home/gallery/@exhibit.Id">@exhibit.Title</a></h3>
+            </div>
+        }
+    </article>
+    <aside class="tags">
         <h2>Exhibits by Tag</h2>
-        <div id="TagCloud" style="width:300px;"></div>
-    </div>
+        <div id="TagCloud"></div>
+    </aside>
 </div>
 
 <script type="text/javascript">
@@ -22,7 +24,7 @@
         $.getJSON("/api/tags", null, function (data) {
             if (data) {
                 data.forEach(function (tag) {
-                    $('#TagCloud').append('<a href="/home/Exhibits/' + tag + '">' + tag + '</a>&nbsp;&nbsp;');
+                    $('#TagCloud').append('<a href="/home/Exhibits/' + tag + '" class="tag-link">' + tag + '</a>');
                 });                
             }
         });

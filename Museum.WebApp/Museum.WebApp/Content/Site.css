@@ -358,6 +358,16 @@ aside {
     font-weight: 700;
 }
 
+/* Tags */
+
+.tags {
+    margin-bottom: 2em;
+}
+
+.tag-link {
+    display: block;
+}
+
 /* login page */
 #loginForm {
     border-right: solid 2px #c8c8c8;
