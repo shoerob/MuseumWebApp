@@ -6,7 +6,7 @@
 .galleria{ width: 700px; height: 400px; background: #000 }
 
 body {
-    background-color: #eee;
+    background-color: #fff;
     border-top: solid 10px #5b5b50;
     color: #333;
     font-size: .85em;
@@ -99,12 +99,6 @@ h5, h6 {
     max-width: 960px;
 }
 
-#body {
-    background-color: #efeeef;
-    clear: both;
-    padding-bottom: 35px;
-}
-
     .main-content {
         background: url("../Images/accent.png") no-repeat;
         padding-left: 10px;
@@ -117,6 +111,10 @@ h5, h6 {
 
 header .content-wrapper {
     padding-top: 20px; 
+}
+
+body > header {
+    background-color: #efeeef;
 }
 
 footer {
@@ -146,6 +144,7 @@ footer {
     display: block;
     text-indent: 99999px;
     direction: rtl;
+    margin-bottom: .5em;
 }
 
 
@@ -206,7 +205,6 @@ ul#menu {
         }
 
         ul#menu li a:hover {
-            color: #333;
             text-decoration: none;
         }
 
