@@ -1,4 +1,4 @@
-﻿@using Museum.WebApp.Models;
+﻿﻿@using Museum.WebApp.Models;
 
 @model Museum.WebApp.Models.MainPageViewModel
 @{
@@ -11,67 +11,73 @@
         featured = Model.RecentExhibits[0];
     }
 }
-<div id="featuredExhibit">
-    <br />
-    <h2>Featured Exhibit</h2>
- 
-@{
-    
-    
-    for (int i = 0; i < 5; i++)
-    {
-        ArtifactViewModel artifact = new ArtifactViewModel();
-       
-       
-        if(featured.Artifacts!=null && i<=(featured.Artifacts.Count()-1))
-        {
-            artifact = featured.Artifacts.ToList<ArtifactViewModel>()[i];
-            
-        }
-        else
-        {
-           
-            artifact.Title = "Artifact Image Placeholder";
-        }
-       
-        <img src="@artifact.ImageUrl" alt="@artifact.Title" width="80" height="160" />
-    }
-     
-}
-
-
-    <h3>Photos of @featured.Title</h3>
-    <strong>by USERNAMEHERE</strong><br />
-    <p>@featured.Description</p>
-</div>
-<div id="recentExhibits">
-<br />
-<h2>Newest Myseum Exhibits</h2>
-@{
-    foreach (ExhibitViewModel exhibit in Model.RecentExhibits)
-    {
-        var artifactForDisplay = new ArtifactViewModel();
-
-        if (exhibit.Artifacts != null && exhibit.Artifacts.Count() > 0)
-        {
-            artifactForDisplay = exhibit.Artifacts.ToList<ArtifactViewModel>()[0];
-        }
-        else
-        {
-            artifactForDisplay.Title = "Artifact Image Placeholder";
-        }
-        
-        <div id="recentExhibit">
-            <img src="@artifactForDisplay.ImageUrl" alt="@artifactForDisplay.Title" 
-                class="recentExhibitImage" width="80" height="160" />
-            <h3>@exhibit.Title by USERNAME</h3>
-            <h4>@exhibit.CreatedAt</h4>
-            <p>@exhibit.Description</p>
+﻿<section id="body">
+    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>Share your collections with the world.</h1>
+            </hgroup>
+            <p>
+                Some text about how cool this service is and what it does and which OSes are supported and maybe how we built it yadda yadda yadda oh man we're totally going to win this hackathon, you guys.
+            </p>
         </div>
+    </section>
+    <section id="featuredExhibit" class="content-wrapper main-content clear-fix">
+        <h2>Featured Exhibit</h2>
+        @{
     
-    }
-}
+    
+            for (int i = 0; i < 5; i++)
+            {
+                ArtifactViewModel artifact = new ArtifactViewModel();
+       
+       
+                if(featured.Artifacts!=null && i<=(featured.Artifacts.Count()-1))
+                {
+                    artifact = featured.Artifacts.ToList<ArtifactViewModel>()[i];
+            
+                }
+                else
+                {
+           
+                    artifact.Title = "Artifact Image Placeholder";
+                }
+       
+                <img src="@artifact.ImageUrl" alt="@artifact.Title" width="80" height="160" />
+            }
+     
+        }
 
 
-</div>
+        <h3>@featured.Title</h3>
+        <strong>by USERNAMEHERE</strong><br />
+        <p>@featured.Description</p>
+    </section>
+    <section id="recentExhibits">
+        <h2>Newest Exhibits</h2>
+        @{
+            foreach (ExhibitViewModel exhibit in Model.RecentExhibits)
+            {
+                var artifactForDisplay = new ArtifactViewModel();
 
+                if (exhibit.Artifacts != null && exhibit.Artifacts.Count() > 0)
+                {
+                    artifactForDisplay = exhibit.Artifacts.ToList<ArtifactViewModel>()[0];
+                }
+                else
+                {
+                    artifactForDisplay.Title = "Artifact Image Placeholder";
+                }
+        
+                <div id="recentExhibit">
+                    <img src="@artifactForDisplay.ImageUrl" alt="@artifactForDisplay.Title" 
+                        class="recentExhibitImage" width="80" height="160" />
+                    <h3>@exhibit.Title by USERNAME</h3>
+                    <h4>@exhibit.CreatedAt</h4>
+                    <p>@exhibit.Description</p>
+                </div>
+    
+            }
+        }
+    </section>
+</section>

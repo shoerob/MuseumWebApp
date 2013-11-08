@@ -105,10 +105,6 @@ h5, h6 {
         padding-top: 30px;
     }
 
-    .featured + .main-content {
-        background: url("../Images/heroAccent.png") no-repeat;
-    }
-
 header .content-wrapper {
     padding-top: 20px; 
 }
@@ -189,7 +185,6 @@ footer {
 ----------------------------------------------------------*/
 ul#menu {
     font-size: 1em;
-    font-weight: 600;
     margin: 3em 2px 5px;
     padding: 0;
     text-align: right;
@@ -236,16 +231,24 @@ ul#menu {
 /* featured */
 .featured {
     background-color: #fff;
+    padding: 3em 0;
+    color: #fff;
 }
 
     .featured .content-wrapper {
-        background-color: #7ac0da;
-        background-image: -ms-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
-        background-image: -o-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
-        background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #7ac0da), color-stop(1, #a4d4e6));
-        background-image: -webkit-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
-        background-image: linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
-        color: #3e5667;
+        background-color: #008584;
+        background-image: -webkit-gradient(
+            linear,
+            left top,
+            left top,
+            color-stop(0, #008585),
+            color-stop(1, #006666)
+        );
+        background-image: -o-linear-gradient(left top, #008585 0%, #006666 100%);
+        background-image: -moz-linear-gradient(left top, #008585 0%, #006666 100%);
+        background-image: -webkit-linear-gradient(left top, #008585 0%, #006666 100%);
+        background-image: -ms-linear-gradient(left top, #008585 0%, #006666 100%);
+        background-image: linear-gradient(to left top, #008585 0%, #006666 100%);
         padding: 20px 40px 30px 40px;
     }
 
@@ -255,6 +258,7 @@ ul#menu {
 
         .featured p {
             font-size: 1.1em;
+            width: 40%;
         }
 
 /* page titles */
